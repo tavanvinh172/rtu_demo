@@ -1,0 +1,79 @@
+extends layout.pug
+
+block content
+  .container-fluid
+    div.card.p-3
+      h3 RTU Logs
+      hr
+      table#mechis-table
+          tr 
+            th No
+            th Description
+            th Created At
+          tbody#log-tbody
+            <!-- File rows will be injected here -->
+      .d-flex.align-items-center.justify-content-end.mt-4
+        div#pagination-bar
+  script.
+    $(document).ready(function() {
+      const logTbody = $('#log-tbody');
+      const paginationBar = $('#pagination-bar');
+      let currentPage = 1;
+      const pageSize = 10;
+
+      function fetchFiles(page) {
+          $.ajax({
+              url: '/api/getAllLogs',
+              method: 'POST',
+              contentType: 'application/json',
+              data: JSON.stringify({ pageIndex: page, pageSize: pageSize }),
+              success: function(data) {
+                  displayFiles(data.data);
+                  setupPagination(data.currentPage, data.totalPages);
+              },
+              error: function(error) {
+                  console.error('Error fetching files:', error);
+              }
+          });
+      }
+
+      function displayFiles(logs) {
+          logTbody.empty();
+          logs.forEach((log, index) => {
+            // Assuming log.createdAt is in ISO 8601 format like "2024-06-21T04:12:04.000Z"
+        const formattedDate = new Date(log.createdAt).toLocaleString('en-GB', {
+            day: '2-digit',
+            month: '2-digit',
+            year: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit'
+        });
+              logTbody.append(`
+                  <tr>
+                      <td class="text-center">${index + 1}</td>
+                      <td>${log.description}</td>
+                      <td>${formattedDate}</td>
+                  </tr>
+              `);
+          });
+      }
+
+      function setupPagination(currentPage, totalPages) {
+          paginationBar.empty();
+          let paginationHTML = '<ul class="pagination">';
+          for (let i = 1; i <= totalPages; i++) {
+              paginationHTML += `<li><a href="#" class="${i === currentPage ? 'active' : ''}" data-page="${i}">${i}</a></li>`;
+          }
+          paginationHTML += '</ul>';
+          paginationBar.append(paginationHTML);
+
+          $('.pagination a').on('click', function(e) {
+              e.preventDefault();
+              currentPage = parseInt($(this).data('page'));
+              fetchFiles(currentPage);
+          });
+      }
+
+      fetchFiles(currentPage);
+    });

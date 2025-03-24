@@ -1,0 +1,272 @@
+extends layout.pug
+
+block content
+    .container-fluid
+      .card
+        form#settingForm.m-4(method="POST" action='/settings')
+          .d-flex.align-items-start.justify-content-start.flex-column
+            h3.mr-2 RTU Setting
+            //- .d-inline
+            //-   .form-check.pr-3
+            //-     input(type="checkbox" value=rtu.enableSendFile checked=rtu.enableSendFile id="enableSendFile" name="enableSendFile").form-check-input
+            //-     label(for="enableSendFile").form-check-label Enable Send Json File
+          hr
+          //- button.btn.btn-primary.text-white Get Setting File
+          - var enableSendFile = rtu.enableSendFile
+          .form-check
+            if enableSendFile == 1 || enableSendFile == 'on'
+              input(type="checkbox" name="enableSendFile" checked=true id="enableSendFile" class = "form-check-input")
+            else
+              input(type="checkbox" name="enableSendFile" checked=false id="enableSendFile" class = "form-check-input")
+            label(for="enableSendFile") Auto Send Json File
+          .custom-select
+            select#fileSelect.select
+              option(value="0") Select File 
+          .row
+            .form-group.col-md-6.col-lg-6.col-sm-12
+              .mt-2
+                label(for="id" class="mt-1") Id
+                input(type="number" readonly class="form-control border border-dark rounded" value=rtu.id id="id" name="id")
+              .mt-2
+                label(for="name" class="mt-1") Name
+                input(type="text" readonly value=rtu.name class="form-control border border-dark rounded" id="name" name="name")
+              .mt-2
+                label(for="stateName" class="mt-1") State Name
+                input(type="text" readonly value=rtu.stateName class="form-control border border-dark rounded" id="stateName" name="stateName")
+              .mt-2
+                label(for="districtName" class="mt-1") District Name
+                input(type="text" readonly class="form-control border border-dark rounded" value=rtu.districtName id="districtName" name="districtName")
+              .mt-2
+                label(for="stationName" class="mt-1") Station Name
+                input(type="text" readonly class="form-control border border-dark rounded" value=rtu.stationName id="stationName" name="stationName")
+              .mt-2
+                label(for="statusName" class="mt-1") Status Name
+                input(type="text" readonly value=rtu.statusName class="form-control border border-dark rounded" id="statusName" name="statusName")
+              .mt-2
+                label(for="inActiveThreshold" class="mt-1") Inactive Threshold
+                input(type="text" readonly value=rtu.inActiveThreshold class="form-control border border-dark rounded" id="inActiveThreshold" name="inActiveThreshold")
+            .form-group.col-md-6.col-lg-6.col-sm-12
+              .mt-2
+                label(for="url" class="mt-1") Url
+                .input-group
+                  input(type="text" readonly value=rtu.url class="form-control border border-dark rounded" id="url" name="url")
+                  a.trailing(href="#" data-target="url")
+                    i.fa.fa-lock
+              .mt-2
+                label(for="username" class="mt-1") Username
+                .input-group
+                  input(type="text" readonly value=rtu.username class="form-control border border-dark rounded" id="username" name="username")
+                  a.trailing(href="#" data-target="username")
+                    i.fa.fa-lock
+              .mt-2
+                label(for="password" class="mt-1") Password
+                .input-group
+                  input(type="password" readonly value=rtu.password class="form-control border border-dark rounded" id="password" name="password")
+                  a.trailing(href="#" data-target="password")
+                    i.fa.fa-lock
+              .mt-2
+                label(for="ipAddress" class="mt-1") Ip Address
+                .input-group
+                  input(type="text" readonly value=rtu.ipAddress class="form-control border border-dark rounded" id="ipAddress" name="ipAddress")
+                  a.trailing(href="#" data-target="ipAddress")
+                    i.fa.fa-lock
+              .mt-2
+                label(for="phone" class="mt-1") Phone
+                input(type="number" readonly value=rtu.phone class="form-control border border-dark rounded" id="phone" name="phone")
+              .mt-2
+                label(for="secretKey" class="mt-1") Secret Key
+                input(type="password" readonly value=rtu.secretKey class="form-control border border-dark rounded" id="secretKey" name="secretKey")
+
+                //- .input-group
+                //-   a.trailing(href="#" data-target="secretKey")
+                //-     i.fa.fa-lock
+              .mt-2
+                label(for="interval" class="mt-1") Interval
+                .input-group
+                  input(type="number" readonly value=rtu.interval class="form-control border border-dark rounded" id="interval" name="interval")
+                  a.trailing(href="#" data-target="interval")
+                    i.fa.fa-lock
+          .modal#myModal
+            .modal-content
+              .close.border-bottom
+                p.text-dark#title
+                span.text-dark.mb-3 &times;
+              input(id="modalContent" class="mt-4 form-control border-dark rounded")
+              .action-button
+                button.btn.btn-light.dialog-close Cancel
+                .m-2
+                button.btn.btn-primary.text-white#dialog-submit(type="click") Submit
+    script.
+      var formData = {
+            id: $('#id').val(),
+            name: $('#name').val(),
+            stateName: $('#stateName').val(),
+            districtName: $('#districtName').val(),
+            stationName: $('#stationName').val(),
+            statusName: $('#statusName').val(),
+            url: $('#url').val(),
+            username: $('#username').val(),
+            password: $('#password').val(),
+            ipAddress: $('#ipAddress').val(),
+            phone: $('#phone').val(),
+            secretKey: $('#secretKey').val(),
+            interval: $('#interval').val(),
+            enableSendFile: $('#enableSendFile').val()
+      }
+      document.querySelectorAll('a.trailing').forEach(element => {
+        element.addEventListener('click', function(event) {
+          event.preventDefault();
+          const targetId = this.getAttribute('data-target');
+          const inputValue = document.getElementById(targetId);
+          if(targetId === "username"){
+            document.getElementById('title').innerHTML = "Update Username";
+            document.getElementById('modalContent').type = "text";
+          }else if(targetId === "password"){
+            document.getElementById('title').innerHTML = "Update Password";
+            document.getElementById('modalContent').type = "password";
+          }else if(targetId === "ipAddress"){
+            document.getElementById('title').innerHTML = "Update IpAddress";
+            document.getElementById('modalContent').type = "text";
+          }else if(targetId === "secretKey"){
+            document.getElementById('title').innerHTML = "Update Secret Key";
+            document.getElementById('modalContent').type = "password";
+          }else if(targetId === "interval"){
+            document.getElementById('title').innerHTML = "Update interval";
+            document.getElementById('modalContent').type = "number";
+          }else if(targetId === "url"){
+            document.getElementById('title').innerHTML = "Update Url";
+            document.getElementById('modalContent').type = "text";
+          }
+          document.getElementById('modalContent').value = inputValue.value;
+          document.getElementById('myModal').style.display = 'block';
+        });
+      });
+
+      document.querySelector('.close').addEventListener('click', function() {
+        document.getElementById('myModal').style.display = 'none';
+      });
+
+      document.querySelector('.dialog-close').addEventListener('click', function() {
+        document.getElementById('myModal').style.display = 'none';
+      });
+
+      window.addEventListener('click', function(event) {
+        if (event.target == document.getElementById('myModal')) {
+          document.getElementById('myModal').style.display = 'none';
+        }
+      });
+      
+      function checkContainsName(targetName) {
+        const titleElement = document.getElementById('title');
+        if (titleElement) {
+          const textContent = titleElement.innerHTML.toLowerCase();
+          return textContent.includes(targetName.toLowerCase());
+        } else {
+          // Handle the case where the element with id 'title' is not found
+          console.warn("Element with id 'title' not found");
+          return false;
+        }
+      }
+
+      $(document).ready(function(e) {
+        function loadFiles(pageIndex = 1, pageSize = 1000){
+          $.ajax({
+            url: "/api/getAllFiles",
+            method: "POST",
+            contentType: "application/json",
+            data: JSON.stringify({
+              pageIndex: pageIndex,
+              pageSize: pageSize
+            }),
+            success: function(response) {
+              const files = response.data;
+              const $fileSelect = $('#fileSelect');
+
+              $fileSelect.find('option:not(:first)').remove();
+              files.forEach(file => {
+                const option = new Option(file.filename, file.filepath);
+                $fileSelect.append(option);
+              });
+            },
+            error: function(error) {
+              console.error('Error fetching files:', error);
+            }
+          })
+        }
+
+        function loadUserSelectFile(){
+          $.ajax({
+            url: `/api/userSelectFile/${Number($('#id').val())}`,
+            method: "GET",
+            contentType: "application/json",
+            success: function(response) {
+              const selectedFilePath = response.status.fileToSend;
+              $('#fileSelect').val(selectedFilePath);
+            },
+            error: function(error) {
+              console.error('Error fetching files:', error);
+            }
+          })
+        }
+
+        $('#enableSendFile').click(function(event){
+          var x = $("#enableSendFile").is(":checked");
+          $.ajax({
+              url: '/api/updateSendJsonFileState',
+              method: 'POST',
+              contentType: 'application/json',
+              data: JSON.stringify({ id: Number($('#id').val()), enableSendFile: Number(x) }),
+              success: function(data) {
+                $("#settingForm").submit();
+              },
+              error: function(error) {
+                  console.error('Error fetching files:', error);
+              }
+          });
+        })
+
+        $('#dialog-submit').click(function(event) {
+          event.preventDefault();
+          if(checkContainsName("username")){
+            $('#username').val(document.getElementById('modalContent').value);
+          }else if(checkContainsName("password")){
+            $('#password').val(document.getElementById('modalContent').value);
+          }else if(checkContainsName("ipaddress")){
+            $('#ipAddress').val(document.getElementById('modalContent').value);
+          }else if(checkContainsName("secret key")){
+            $('#secretKey').val(document.getElementById('modalContent').value);
+          }else if(checkContainsName("interval")){
+            $('#interval').val(document.getElementById('modalContent').value);
+          }else if(checkContainsName("url")){
+            if(document.getElementById('modalContent').value.endsWith("/")){
+              $('#url').val(document.getElementById('modalContent').value);
+            }else{
+              $('#url').val(document.getElementById('modalContent').value + "/");
+            }
+          }else{
+            return ;
+          }
+          document.getElementById('myModal').style.display = 'none';
+          $("#settingForm").submit();
+        });
+
+        loadFiles();
+        loadUserSelectFile();
+        $('#fileSelect').change(function() {
+          const selectedFileId = $(this).val();
+          if (selectedFileId !== "0") {
+            $.ajax({
+              url: '/api/updateSendJsonFileState',
+              method: 'POST',
+              contentType: 'application/json',
+              data: JSON.stringify({ id: Number($('#id').val()), fileToSend: selectedFileId }),
+              success: function(data) {
+                $("#settingForm").submit();
+              },
+              error: function(error) {
+                  console.error('Error fetching files:', error);
+              }
+          });
+          }
+        });
+      });

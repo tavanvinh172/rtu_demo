@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<LOGGING>
+  <logging_type>RealData</logging_type>
+  <vender_id>infinity-prospect</vender_id>
+  <vender>Maintek Enterprise</vender>
+  <station_ref>b689bb868834082805f9dcfaa6e22c3189526fb19c813d112af6e0cea0d8b823</station_ref>
+  <station_id>kel-tcg-007</station_id>
+  <station_name>Pasir Mas Trash Rake</station_name>
+  <send_date>
+    <year>2024</year>
+    <month>02</month>
+    <day>15</day>
+  </send_date>
+  <send_time>
+    <hour>12</hour>
+    <minute>39</minute>
+    <second>58</second>
+  </send_time>
+  <update_date>
+    <year>2024</year>
+    <month>02</month>
+    <day>15</day>
+  </update_date>
+  <update_time>
+    <hour>12</hour>
+    <minute>39</minute>
+    <second>58</second>
+  </update_time>
+  <total_data>14</total_data>
+  <data1>
+    <index>1</index>
+    <tag>UPSTR_AVG_LVL</tag>
+    <desc>Upstream Average Level</desc>
+    <eunit>-</eunit>
+    <value>8.52</value>
+  </data1>
+  <data2>
+    <index>2</index>
+    <tag>DNSTR_AVG_LVL</tag>
+    <desc>Downstream Average Level</desc>
+    <eunit>-</eunit>
+    <value>6.86</value>
+  </data2>
+  <data3>
+    <index>3</index>
+    <tag>RS1_COND</tag>
+    <desc>Rotary Screen 1 Condition</desc>
+    <eunit>-</eunit>
+    <value>0</value>
+  </data3>
+  <data4>
+    <index>4</index>
+    <tag>RS1_MODE</tag>
+    <desc>Rotary Screen 1 Mode</desc>
+    <eunit>-</eunit>
+    <value>1</value>
+  </data4>
+  <data5>
+    <index>5</index>
+    <tag>RS1_STAT</tag>
+    <desc>Rotary Screen 1 Status</desc>
+    <eunit>-</eunit>
+    <value>0</value>
+  </data5>
+  <data6>
+    <index>6</index>
+    <tag>RS_CVYR1_COND</tag>
+    <desc>Conveyor 1 Condition</desc>
+    <eunit>-</eunit>
+    <value>0</value>
+  </data6>
+  <data7>
+    <index>7</index>
+    <tag>RS_CVYR1_MODE</tag>
+    <desc>Conveyor 1 Mode</desc>
+    <eunit>-</eunit>
+    <value>1</value>
+  </data7>
+  <data8>
+    <index>8</index>
+    <tag>RS_CVYR1_STAT</tag>
+    <desc>Conveyor 1 Status</desc>
+    <eunit>-</eunit>
+    <value>0</value>
+  </data8>
+  <data9>
+    <index>9</index>
+    <tag>RS2_COND</tag>
+    <desc>Rotary Screen 2 Condition</desc>
+    <eunit>-</eunit>
+    <value>0</value>
+  </data9>
+  <data10>
+    <index>10</index>
+    <tag>RS2_MODE</tag>
+    <desc>Rotary Screen 2 Mode</desc>
+    <eunit>-</eunit>
+    <value>3</value>
+  </data10>
+  <data11>
+    <index>11</index>
+    <tag>RS2_STAT</tag>
+    <desc>Rotary Screen 2 Status</desc>
+    <eunit>-</eunit>
+    <value>0</value>
+  </data11>
+  <data12>
+    <index>12</index>
+    <tag>RS_CVYR2_COND</tag>
+    <desc>Conveyor 2 Condition</desc>
+    <eunit>-</eunit>
+    <value>0</value>
+  </data12>
+  <data13>
+    <index>13</index>
+    <tag>RS_CVYR2_MODE</tag>
+    <desc>Conveyor 2 Mode</desc>
+    <eunit>-</eunit>
+    <value>3</value>
+  </data13>
+  <data14>
+    <index>14</index>
+    <tag>RS_CVYR2_STAT</tag>
+    <desc>Conveyor 2 Status</desc>
+    <eunit>-</eunit>
+    <value>0</value>
+  </data14>
+  <status>
+    <message>Complete</message>
+  </status>
+</LOGGING>

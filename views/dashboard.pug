@@ -1,0 +1,77 @@
+extends layout.pug
+
+block content
+  .container-fluid
+    div.card.p-3
+      h3 File Management
+      hr
+      a.btn.btn-primary.px-3.py-2.my-3.col-2.text-white(href =`/upload`) Upload File
+      table#mechis-table
+        tr 
+          th No
+          th File Name
+          th Status
+          th Action
+        tbody#file-tbody
+            <!-- File rows will be injected here -->
+      .d-flex.align-items-center.justify-content-end.mt-4
+        div#pagination-bar
+  script.
+    $(document).ready(function() {
+      const fileTbody = $('#file-tbody');
+      const paginationBar = $('#pagination-bar');
+      let currentPage = 1;
+      const pageSize = 10;
+      //- Get All Files Api
+      function fetchFiles(page) {
+          $.ajax({
+              url: '/api/getAllFiles',
+              method: 'POST',
+              contentType: 'application/json',
+              data: JSON.stringify({ pageIndex: page, pageSize: pageSize }),
+              success: function(data) {
+                  displayFiles(data.data);
+                  setupPagination(data.currentPage, data.totalPages);
+              },
+              error: function(error) {
+                  console.error('Error fetching files:', error);
+              }
+          });
+      }
+
+      function displayFiles(files) {
+          fileTbody.empty();
+          files.forEach((file, index) => {
+              fileTbody.append(`
+                  <tr>
+                      <td class="text-center">${index + 1}</td>
+                      <td>${file.filename}</td>
+                      <td>${file.lastDownloaded ? 'Downloaded' : ''}</td>
+                      <td>
+                        <a class="btn btn-primary text-white px-3 py-2" href="/download/${file.filename}/${file.id}">
+                          Download
+                        </a>
+                      </td>
+                  </tr>
+              `);
+          });
+      }
+
+      function setupPagination(currentPage, totalPages) {
+          paginationBar.empty();
+          let paginationHTML = '<ul class="pagination">';
+          for (let i = 1; i <= totalPages; i++) {
+              paginationHTML += `<li><a href="#" class="${i === currentPage ? 'active' : ''}" data-page="${i}">${i}</a></li>`;
+          }
+          paginationHTML += '</ul>';
+          paginationBar.append(paginationHTML);
+
+          $('.pagination a').on('click', function(e) {
+              e.preventDefault();
+              currentPage = parseInt($(this).data('page'));
+              fetchFiles(currentPage);
+          });
+      }
+
+      fetchFiles(currentPage);
+    });

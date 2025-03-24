@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<LOGGING>
+  <logging_type>RealData</logging_type>
+  <vender_id>Infinity Prospect</vender_id>
+  <vender>Maintek Enterprise</vender>
+  <station_ref>324ec5c82df5f05a7c733b66b757de03e3c465d6aaad61bef3b5e72bdf7632f3</station_ref>
+  <station_id>kel-tcg-007</station_id>
+  <station_name>Pasir Mas</station_name>
+  <send_date>
+    <year>2024</year>
+    <month>02</month>
+    <day>15</day>
+  </send_date>
+  <send_time>
+    <hour>12</hour>
+    <minute>39</minute>
+    <second>58</second>
+  </send_time>
+  <update_date>
+    <year>2024</year>
+    <month>02</month>
+    <day>15</day>
+  </update_date>
+  <update_time>
+    <hour>12</hour>
+    <minute>39</minute>
+    <second>58</second>
+  </update_time>
+  <total_data>16</total_data>
+  <data1>
+    <index>1</index>
+    <tag>SITE_NAME</tag>
+    <desc>Site Name</desc>
+    <eunit>-</eunit>
+    <value>Pasir Mas Automation Station</value>
+  </data1>
+  <data2>
+    <index>2</index>
+    <tag>SITE_DISTRICT</tag>
+    <desc>Site District</desc>
+    <eunit>-</eunit>
+    <value>Pasir Mas</value>
+  </data2>
+  <data3>
+    <index>3</index>
+    <tag>SITE_STATE</tag>
+    <desc>Site State</desc>
+    <eunit>-</eunit>
+    <value>Kelantan</value>
+  </data3>
+  <data4>
+    <index>4</index>
+    <tag>UPSTR_AVG_LVL</tag>
+    <desc>Upstream Average Level</desc>
+    <eunit>-</eunit>
+    <value>8.52</value>
+  </data4>
+  <data5>
+    <index>5</index>
+    <tag>UP_SENSOR1</tag>
+    <desc>Up Stream Sensor 1</desc>
+    <eunit>-</eunit>
+    <value>8.52</value>
+  </data5>
+  <data6>
+    <index>6</index>
+    <tag>UP_SENSOR2</tag>
+    <desc>Up Stream Sensor 2</desc>
+    <eunit>-</eunit>
+    <value>7.18</value>
+  </data6>
+  <data7>
+    <index>7</index>
+    <tag>DNSTR_AVG_LVL</tag>
+    <desc>Downstream Average Level</desc>
+    <eunit>-</eunit>
+    <value>6.86</value>
+  </data7>
+  <data8>
+    <index>154</index>
+    <tag>DANGER_LVL_SP</tag>
+    <desc>Danger Level Setpoint</desc>
+    <eunit>meter</eunit>
+    <value>9</value>
+  </data8>
+  <data9>
+    <index>155</index>
+    <tag>ALERT_LVL_SP</tag>
+    <desc>Alert Level Setpoint</desc>
+    <eunit>meter</eunit>
+    <value>7</value>
+  </data9>
+  <data10>
+    <index>10</index>
+    <tag>S1_DOOR_MODE</tag>
+    <desc>Gate 1 Mode</desc>
+    <eunit>-</eunit>
+    <value>3</value>
+  </data10>
+  <data11>
+    <index>11</index>
+    <tag>S1_DOOR_STAT</tag>
+    <desc>Gate 1 Status</desc>
+    <eunit>-</eunit>
+    <value>0</value>
+  </data11>
+  <data12>
+    <index>12</index>
+    <tag>S2_DOOR_MODE</tag>
+    <desc>Gate 2 Mode</desc>
+    <eunit>-</eunit>
+    <value>3</value>
+  </data12>
+  <data13>
+    <index>13</index>
+    <tag>S2_DOOR_STAT</tag>
+    <desc>Gate 2 Status</desc>
+    <eunit>-</eunit>
+    <value>0</value>
+  </data13>
+  <data14>
+    <index>14</index>
+    <tag>S1_DOOR_COND</tag>
+    <desc>Gate 1 Condition</desc>
+    <eunit>-</eunit>
+    <value>0</value>
+  </data14>
+  <data15>
+    <index>15</index>
+    <tag>S2_DOOR_COND</tag>
+    <desc>Gate 2 Condition</desc>
+    <eunit>-</eunit>
+    <value>0</value>
+  </data15>
+  <data16>
+    <index>16</index>
+    <tag>GATE_NUMBER</tag>
+    <desc>Number of available gates</desc>
+    <eunit>-</eunit>
+    <value>1</value>
+  </data16>
+  <status>
+    <message>Complete</message>
+  </status>
+</LOGGING>

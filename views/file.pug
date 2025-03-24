@@ -1,0 +1,14 @@
+extends layout.pug
+
+block content
+  .container-fluid
+    form(action="/upload" method="POST" enctype="multipart/form-data").card.px-2.py-2
+      div.mb-3
+        label(for="file").form-label Choose a file:
+        input(type="file" name="file" id="file" required).form-control 
+      br
+      button(type="submit").btn.btn-primary.px-3.py-2.col-2 Upload
+    if error
+      p.error= error
+    if message
+      p.message= message

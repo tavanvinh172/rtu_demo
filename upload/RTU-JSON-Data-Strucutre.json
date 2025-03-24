@@ -1,0 +1,768 @@
+{
+  "venderId": "Infinity Prospect",
+  "venderName": "Maintek Enterprise",
+  "stationName": "Pasir Mas",
+  "stationId": "kel-tcg-007",
+  "sendDate": {
+    "year": 2024,
+    "month": 2,
+    "day": 15,
+    "hour": 12,
+    "minute": 39,
+    "second": 58
+  },
+  "realDataGates": {
+    "assetTypeRef": "324ec5c82df5f05a7c733b66b757de03e3c465d6aaad61bef3b5e72bdf7632f3",
+    "quantity": 2,
+    "data": [
+      {
+        "id": "kel-tcg-005",
+        "totalData": 2,
+        "updateDate": {
+          "year": 2024,
+          "month": 2,
+          "day": 15,
+          "hour": 12,
+          "minute": 39,
+          "second": 58
+        },
+        "data": [
+          {
+            "index": 1,
+            "tag": "SITE_NAME",
+            "desc": "Site Name",
+            "eunit": "-",
+            "value": "Pasir Mas Automation Station"
+          },
+          {
+            "index": 2,
+            "tag": "SITE_DISTRICT",
+            "desc": "Site District",
+            "eunit": "-",
+            "value": "Pasir Mas"
+          }
+        ],
+        "status": {
+          "message": "Complete"
+        }
+      },
+      {
+        "id": 2,
+        "totalData": 2,
+        "updateDate": {
+          "year": 2024,
+          "month": 2,
+          "day": 15,
+          "hour": 12,
+          "minute": 39,
+          "second": 58
+        },
+        "data": [
+          {
+            "index": 1,
+            "tag": "SITE_NAME",
+            "desc": "Site Name",
+            "eunit": "-",
+            "value": "Pasir Mas Automation Station"
+          },
+          {
+            "index": 2,
+            "tag": "SITE_DISTRICT",
+            "desc": "Site District",
+            "eunit": "-",
+            "value": "Pasir Mas"
+          }
+        ],
+        "status": {
+          "message": "Complete"
+        }
+      }
+    ]
+  },
+  "realDataPumps": {
+    "assetTypeRef": "324ec5c82df5f05a7c733b66b757de03e3c465d6aaad61bef3b5e72bdf7632f3",
+    "quantity": 2,
+    "data": [
+      {
+        "id": "kel-tcg-007",
+        "totalData": 2,
+        "updateDate": {
+          "year": 2024,
+          "month": 2,
+          "day": 15,
+          "hour": 12,
+          "minute": 39,
+          "second": 58
+        },
+        "data": [
+          {
+            "index": 1,
+            "tag": "UPSTR_AVG_LVL",
+            "desc": "Pump Sump Average Level",
+            "eunit": "-",
+            "value": "6.55"
+          },
+          {
+            "index": 2,
+            "tag": "DNSTR_AVG_LVL",
+            "desc": "Downstream Average Level",
+            "eunit": "-",
+            "value": "6.86"
+          }
+        ],
+        "status": {
+          "message": "Complete"
+        }
+      }
+    ]
+  },
+  "realDataTrashRakes": {
+    "assetTypeRef": "324ec5c82df5f05a7c733b66b757de03e3c465d6aaad61bef3b5e72bdf7632f3",
+    "quantity": 2,
+    "data": [
+      {
+        "id": "kel-tcg-007",
+        "totalData": 2,
+        "updateDate": {
+          "year": 2024,
+          "month": 2,
+          "day": 15,
+          "hour": 12,
+          "minute": 39,
+          "second": 58
+        },
+        "data": [
+          {
+            "index": 1,
+            "tag": "UPSTR_AVG_LVL",
+            "desc": "Upstream Average Level",
+            "eunit": "-",
+            "value": "8.52"
+          },
+          {
+            "index": 2,
+            "tag": "DNSTR_AVG_LVL",
+            "desc": "Downstream Average Level",
+            "eunit": "-",
+            "value": "6.86"
+          }
+        ],
+        "status": {
+          "message": "Complete"
+        }
+      }
+    ]
+  },
+  "realDataRiverWaters": {
+    "assetTypeRef": "324ec5c82df5f05a7c733b66b757de03e3c465d6aaad61bef3b5e72bdf7632f3",
+    "quantity": 2,
+    "data": [
+      {
+        "id": "kel-tcg-007",
+        "totalData": 2,
+        "updateDate": {
+          "year": 2024,
+          "month": 2,
+          "day": 15,
+          "hour": 12,
+          "minute": 39,
+          "second": 58
+        },
+        "data": [
+          {
+            "index": 1,
+            "tag": "B1_COND",
+            "desc": "Blower 1 Condition",
+            "eunit": "-",
+            "value": "1"
+          },
+          {
+            "index": 2,
+            "tag": "B1_MODE",
+            "desc": "Blower 1 Mode",
+            "eunit": "-",
+            "value": "1"
+          }
+        ],
+        "status": {
+          "message": "Complete"
+        }
+      }
+    ]
+  },
+  "realDataCrestGates": {
+    "assetTypeRef": "324ec5c82df5f05a7c733b66b757de03e3c465d6aaad61bef3b5e72bdf7632f3",
+    "quantity": 2,
+    "data": [
+      {
+        "id": "kel-tcg-007",
+        "totalData": 2,
+        "updateDate": {
+          "year": 2024,
+          "month": 2,
+          "day": 15,
+          "hour": 12,
+          "minute": 39,
+          "second": 58
+        },
+        "data": [
+          {
+            "index": 1,
+            "tag": "B1_COND",
+            "desc": "Blower 1 Condition",
+            "eunit": "-",
+            "value": "1"
+          },
+          {
+            "index": 2,
+            "tag": "B1_MODE",
+            "desc": "Blower 1 Mode",
+            "eunit": "-",
+            "value": "1"
+          }
+        ],
+        "status": {
+          "message": "Complete"
+        }
+      }
+    ]
+  },
+  "realDataSolarAerators": {
+    "assetTypeRef": "324ec5c82df5f05a7c733b66b757de03e3c465d6aaad61bef3b5e72bdf7632f3",
+    "quantity": 2,
+    "data": [
+      {
+        "id": "kel-tcg-007",
+        "totalData": 2,
+        "updateDate": {
+          "year": 2024,
+          "month": 2,
+          "day": 15,
+          "hour": 12,
+          "minute": 39,
+          "second": 58
+        },
+        "data": [
+          {
+            "index": 1,
+            "tag": "B1_COND",
+            "desc": "Blower 1 Condition",
+            "eunit": "-",
+            "value": "1"
+          },
+          {
+            "index": 2,
+            "tag": "B1_MODE",
+            "desc": "Blower 1 Mode",
+            "eunit": "-",
+            "value": "1"
+          }
+        ],
+        "status": {
+          "message": "Complete"
+        }
+      }
+    ]
+  },
+  "realDataWaterQualitys": {
+    "assetTypeRef": "324ec5c82df5f05a7c733b66b757de03e3c465d6aaad61bef3b5e72bdf7632f3",
+    "quantity": 2,
+    "data": [
+      {
+        "id": "kel-tcg-007",
+        "totalData": 2,
+        "updateDate": {
+          "year": 2024,
+          "month": 2,
+          "day": 15,
+          "hour": 12,
+          "minute": 39,
+          "second": 58
+        },
+        "data": [
+          {
+            "index": 1,
+            "tag": "B1_COND",
+            "desc": "Blower 1 Condition",
+            "eunit": "-",
+            "value": "1"
+          },
+          {
+            "index": 2,
+            "tag": "B1_MODE",
+            "desc": "Blower 1 Mode",
+            "eunit": "-",
+            "value": "1"
+          }
+        ],
+        "status": {
+          "message": "Complete"
+        }
+      }
+    ]
+  },
+  "realDataTurbines": {
+    "assetTypeRef": "324ec5c82df5f05a7c733b66b757de03e3c465d6aaad61bef3b5e72bdf7632f3",
+    "quantity": 2,
+    "data": [
+      {
+        "id": "kel-tcg-007",
+        "totalData": 2,
+        "updateDate": {
+          "year": 2024,
+          "month": 2,
+          "day": 15,
+          "hour": 12,
+          "minute": 39,
+          "second": 58
+        },
+        "data": [
+          {
+            "index": 1,
+            "tag": "B1_COND",
+            "desc": "Blower 1 Condition",
+            "eunit": "-",
+            "value": "1"
+          },
+          {
+            "index": 2,
+            "tag": "B1_MODE",
+            "desc": "Blower 1 Mode",
+            "eunit": "-",
+            "value": "1"
+          }
+        ],
+        "status": {
+          "message": "Complete"
+        }
+      }
+    ]
+  },
+  "trendGates": {
+    "assetTypeRef": "324ec5c82df5f05a7c733b66b757de03e3c465d6aaad61bef3b5e72bdf7632f3",
+    "quantity": 2,
+    "data": [
+      {
+        "id": "kel-tcg-007",
+        "totalData": 2,
+        "data": [
+          "2024-02-15,00:00:00,6.55,6.86,,9,7,,91199,,93399,,92299",
+          "2024-02-15,00:05:00,6.54,6.86,,9,7,,91199,,93399,,92299"
+        ],
+        "status": {
+          "message": "Complete"
+        }
+      }
+    ]
+  },
+  "trendPumps": {
+    "assetTypeRef": "324ec5c82df5f05a7c733b66b757de03e3c465d6aaad61bef3b5e72bdf7632f3",
+    "quantity": 2,
+    "data": [
+      {
+        "id": "kel-tcg-007",
+        "totalData": 2,
+        "data": [
+          "2024-02-15,00:00:00,6.55,6.86,7,9,,,,,9009,,5005",
+          "2024-02-15,00:05:00,6.54,6.86,7,9,,,,,9009,,5005"
+        ],
+        "status": {
+          "message": "Complete"
+        }
+      }
+    ]
+  },
+  "trendWaterPurifications": {
+    "assetTypeRef": "324ec5c82df5f05a7c733b66b757de03e3c465d6aaad61bef3b5e72bdf7632f3",
+    "quantity": 2,
+    "data": [
+      {
+        "id": "kel-tcg-007",
+        "totalData": 2,
+        "data": [
+          "2024-02-15,00:00:00,6.55,6.86,,9,7,,91199,,93399,,92299",
+          "2024-02-15,00:05:00,6.54,6.86,,9,7,,91199,,93399,,92299"
+        ],
+        "status": {
+          "message": "Complete"
+        }
+      }
+    ]
+  },
+  "trendCrestGates": {
+    "assetTypeRef": "324ec5c82df5f05a7c733b66b757de03e3c465d6aaad61bef3b5e72bdf7632f3",
+    "quantity": 2,
+    "data": [
+      {
+        "id": "kel-tcg-007",
+        "totalData": 2,
+        "data": [
+          "2024-02-15,00:00:00,6.55,6.86,,9,7,,91199,,93399,,92299",
+          "2024-02-15,00:05:00,6.54,6.86,,9,7,,91199,,93399,,92299"
+        ],
+        "status": {
+          "message": "Complete"
+        }
+      }
+    ]
+  },
+  "trendSolarAerators": {
+    "assetTypeRef": "324ec5c82df5f05a7c733b66b757de03e3c465d6aaad61bef3b5e72bdf7632f3",
+    "quantity": 2,
+    "data": [
+      {
+        "id": "kel-tcg-007",
+        "totalData": 2,
+        "data": [
+          "2024-02-15,00:00:00,6.55,6.86,,9,7,,91199,,93399,,92299",
+          "2024-02-15,00:05:00,6.54,6.86,,9,7,,91199,,93399,,92299"
+        ],
+        "status": {
+          "message": "Complete"
+        }
+      }
+    ]
+  },
+  "trendTrashRakes": {
+    "assetTypeRef": "324ec5c82df5f05a7c733b66b757de03e3c465d6aaad61bef3b5e72bdf7632f3",
+    "quantity": 2,
+    "data": [
+      {
+        "id": "kel-tcg-007",
+        "totalData": 2,
+        "data": [
+          "2024-02-15,00:00:00,6.55,6.86,,9,7,,91199,,93399,,92299",
+          "2024-02-15,00:05:00,6.54,6.86,,9,7,,91199,,93399,,92299"
+        ],
+        "status": {
+          "message": "Complete"
+        }
+      }
+    ]
+  },
+  "trendTurbines": {
+    "assetTypeRef": "324ec5c82df5f05a7c733b66b757de03e3c465d6aaad61bef3b5e72bdf7632f3",
+    "quantity": 2,
+    "data": [
+      {
+        "id": "kel-tcg-007",
+        "totalData": 2,
+        "data": [
+          "2024-02-15,00:00:00,6.55,6.86,,9,7,,91199,,93399,,92299",
+          "2024-02-15,00:05:00,6.54,6.86,,9,7,,91199,,93399,,92299"
+        ],
+        "status": {
+          "message": "Complete"
+        }
+      }
+    ]
+  },
+  "alarmGates": {
+    "assetTypeRef": "324ec5c82df5f05a7c733b66b757de03e3c465d6aaad61bef3b5e72bdf7632f3",
+    "quantity": 2,
+    "data": [
+      {
+        "id": "kel-tcg-007",
+        "totalData": 1,
+        "data": [
+          {
+            "index": 1,
+            "type": "Off",
+            "cat": "Alarm",
+            "tag": "lv_hihi",
+            "description": "Water Level High Alert 888",
+            "startDate": {
+              "year": 2024,
+              "month": 2,
+              "day": 15,
+              "hour": 12,
+              "minute": 39,
+              "second": 58
+            },
+            "endDate": {
+              "year": 2024,
+              "month": 2,
+              "day": 15,
+              "hour": 12,
+              "minute": 45,
+              "second": 58
+            },
+            "relatedData": {
+              "onUpStream": -9.9,
+              "onDownStream": -8888.88,
+              "offUpStream": -8888.88,
+              "offDownStream": -8888.88
+            }
+          }
+        ],
+        "status": {
+          "message": "Complete"
+        }
+      }
+    ]
+  },
+  "alarmPumps": {
+    "assetTypeRef": "324ec5c82df5f05a7c733b66b757de03e3c465d6aaad61bef3b5e72bdf7632f3",
+    "quantity": 2,
+    "data": [
+      {
+        "id": "kel-tcg-007",
+        "totalData": 1,
+        "data": [
+          {
+            "index": 1,
+            "type": "Off",
+            "cat": "Alarm",
+            "tag": "lv_hihi",
+            "description": "Water Level High Alert 888",
+            "startDate": {
+              "year": 2024,
+              "month": 2,
+              "day": 15,
+              "hour": 12,
+              "minute": 39,
+              "second": 58
+            },
+            "endDate": {
+              "year": 2024,
+              "month": 2,
+              "day": 15,
+              "hour": 12,
+              "minute": 45,
+              "second": 58
+            },
+            "relatedData": {
+              "onUpStream": -9.9,
+              "onDownStream": -8888.88,
+              "offUpStream": -8888.88,
+              "offDownStream": -8888.88
+            }
+          }
+        ],
+        "status": {
+          "message": "Complete"
+        }
+      }
+    ]
+  },
+  "alarmRiverWaters": {
+    "assetTypeRef": "324ec5c82df5f05a7c733b66b757de03e3c465d6aaad61bef3b5e72bdf7632f3",
+    "quantity": 2,
+    "data": [
+      {
+        "id": "kel-tcg-007",
+        "totalData": 1,
+        "data": [
+          {
+            "index": 1,
+            "type": "Off",
+            "cat": "Alarm",
+            "tag": "lv_hihi",
+            "description": "Water Level High Alert 888",
+            "startDate": {
+              "year": 2024,
+              "month": 2,
+              "day": 15,
+              "hour": 12,
+              "minute": 39,
+              "second": 58
+            },
+            "endDate": {
+              "year": 2024,
+              "month": 2,
+              "day": 15,
+              "hour": 12,
+              "minute": 45,
+              "second": 58
+            },
+            "relatedData": {
+              "onUpStream": -9.9,
+              "onDownStream": -8888.88,
+              "offUpStream": -8888.88,
+              "offDownStream": -8888.88
+            }
+          }
+        ],
+        "status": {
+          "message": "Complete"
+        }
+      }
+    ]
+  },
+  "alarmCrestGates": {
+    "assetTypeRef": "324ec5c82df5f05a7c733b66b757de03e3c465d6aaad61bef3b5e72bdf7632f3",
+    "quantity": 2,
+    "data": [
+      {
+        "id": "kel-tcg-007",
+        "totalData": 1,
+        "data": [
+          {
+            "index": 1,
+            "type": "Off",
+            "cat": "Alarm",
+            "tag": "lv_hihi",
+            "description": "Water Level High Alert 888",
+            "startDate": {
+              "year": 2024,
+              "month": 2,
+              "day": 15,
+              "hour": 12,
+              "minute": 39,
+              "second": 58
+            },
+            "endDate": {
+              "year": 2024,
+              "month": 2,
+              "day": 15,
+              "hour": 12,
+              "minute": 45,
+              "second": 58
+            },
+            "relatedData": {
+              "onUpStream": -9.9,
+              "onDownStream": -8888.88,
+              "offUpStream": -8888.88,
+              "offDownStream": -8888.88
+            }
+          }
+        ],
+        "status": {
+          "message": "Complete"
+        }
+      }
+    ]
+  },
+  "alarmSolarAerators": {
+    "assetTypeRef": "324ec5c82df5f05a7c733b66b757de03e3c465d6aaad61bef3b5e72bdf7632f3",
+    "quantity": 2,
+    "data": [
+      {
+        "id": "kel-tcg-007",
+        "totalData": 1,
+        "data": [
+          {
+            "index": 1,
+            "type": "Off",
+            "cat": "Alarm",
+            "tag": "lv_hihi",
+            "description": "Water Level High Alert 888",
+            "startDate": {
+              "year": 2024,
+              "month": 2,
+              "day": 15,
+              "hour": 12,
+              "minute": 39,
+              "second": 58
+            },
+            "endDate": {
+              "year": 2024,
+              "month": 2,
+              "day": 15,
+              "hour": 12,
+              "minute": 45,
+              "second": 58
+            },
+            "relatedData": {
+              "onUpStream": -9.9,
+              "onDownStream": -8888.88,
+              "offUpStream": -8888.88,
+              "offDownStream": -8888.88
+            }
+          }
+        ],
+        "status": {
+          "message": "Complete"
+        }
+      }
+    ]
+  },
+  "alarmTrashRakes": {
+    "assetTypeRef": "324ec5c82df5f05a7c733b66b757de03e3c465d6aaad61bef3b5e72bdf7632f3",
+    "quantity": 2,
+    "data": [
+      {
+        "id": "kel-tcg-007",
+        "totalData": 1,
+        "data": [
+          {
+            "index": 1,
+            "type": "Off",
+            "cat": "Alarm",
+            "tag": "lv_hihi",
+            "description": "Water Level High Alert 888",
+            "startDate": {
+              "year": 2024,
+              "month": 2,
+              "day": 15,
+              "hour": 12,
+              "minute": 39,
+              "second": 58
+            },
+            "endDate": {
+              "year": 2024,
+              "month": 2,
+              "day": 15,
+              "hour": 12,
+              "minute": 45,
+              "second": 58
+            },
+            "relatedData": {
+              "onUpStream": -9.9,
+              "onDownStream": -8888.88,
+              "offUpStream": -8888.88,
+              "offDownStream": -8888.88
+            }
+          }
+        ],
+        "status": {
+          "message": "Complete"
+        }
+      }
+    ]
+  },
+  "alarmTurbines": {
+    "assetTypeRef": "324ec5c82df5f05a7c733b66b757de03e3c465d6aaad61bef3b5e72bdf7632f3",
+    "quantity": 2,
+    "data": [
+      {
+        "id": "kel-tcg-007",
+        "totalData": 1,
+        "data": [
+          {
+            "index": 1,
+            "type": "Off",
+            "cat": "Alarm",
+            "tag": "lv_hihi",
+            "description": "Water Level High Alert 888",
+            "startDate": {
+              "year": 2024,
+              "month": 2,
+              "day": 15,
+              "hour": 12,
+              "minute": 39,
+              "second": 58
+            },
+            "endDate": {
+              "year": 2024,
+              "month": 2,
+              "day": 15,
+              "hour": 12,
+              "minute": 45,
+              "second": 58
+            },
+            "relatedData": {
+              "onUpStream": -9.9,
+              "onDownStream": -8888.88,
+              "offUpStream": -8888.88,
+              "offDownStream": -8888.88
+            }
+          }
+        ],
+        "status": {
+          "message": "Complete"
+        }
+      }
+    ]
+  }
+}
