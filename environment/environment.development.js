@@ -1,6 +1,6 @@
 // environment.js
 const environment = {
-  baseUrl: "https://api-mechis-dev.hnk1688.com/",
+  baseUrl: "https://api-staging.ingeniousts.com.my/",
   baseUrlStage: "https://mechis-api-stage.nentangchuyendoiso.net/",
 };
 

@@ -65,7 +65,9 @@ module.exports = {
       const file = await File.create({
         filename: req.file.originalname,
         filetype,
-        filepath: `${IP_ADDRESS}:${PORT || 3001}/${req.file.originalname}`,
+        filepath: `http://${IP_ADDRESS}:${PORT || 3001}/${
+          req.file.originalname
+        }`,
         userId: 1,
       });
 

@@ -1,0 +1,1085 @@
+{
+  "VendorId": "1",
+  "VendorName": "Ingenious Technology Solutions Sdn. Bhd.",
+  "StationId": "39",
+  "StationName": "Test Station 1",
+  "SendDate": null,
+  "RealDataGates": {
+    "Gates": {
+      "AssetTypeRef": "96c6a42403c64cc39aa5be6e60dce9912c61e990f1654441a6adb5e16c8380f1",
+      "Quantity": 1,
+      "Data": [
+        {
+          "Id": "IPH-BPME-G-001-X-AFP-101",
+          "TotalData": 0,
+          "UpdateDate": {
+            "year": 2025,
+            "month": 4,
+            "day": 7,
+            "hour": 13,
+            "minute": 15,
+            "second": 0
+          },
+          "Data": [
+            {
+              "index": "4",
+              "tag": "UPSTR_AVG_LVL",
+              "desc": "Upstream Average Level",
+              "eunit": "-",
+              "value": "8.0000"
+            },
+            {
+              "index": "7",
+              "tag": "DNSTR_AVG_LVL",
+              "desc": "Downstream Average Level",
+              "eunit": "-",
+              "value": "7.50"
+            },
+            {
+              "index": "10",
+              "tag": "S2_DOOR_MODE",
+              "desc": "Gate 2 Mode",
+              "eunit": "-",
+              "value": "1"
+            },
+            {
+              "index": "11",
+              "tag": "S2_DOOR_STAT",
+              "desc": "Gate 2 Status",
+              "eunit": "-",
+              "value": "3"
+            },
+            {
+              "index": "14",
+              "tag": "S2_DOOR_COND",
+              "desc": "Gate 2 Condition",
+              "eunit": "-",
+              "value": "0"
+            },
+            {
+              "index": "10",
+              "tag": "S3_DOOR_MODE",
+              "desc": "Gate 3 Mode",
+              "eunit": "-",
+              "value": "0"
+            },
+            {
+              "index": "11",
+              "tag": "S3_DOOR_STAT",
+              "desc": "Gate 3 Status",
+              "eunit": "-",
+              "value": "4"
+            },
+            {
+              "index": "14",
+              "tag": "S3_DOOR_COND",
+              "desc": "Gate 3 Condition",
+              "eunit": "-",
+              "value": "0"
+            },
+            {
+              "index": "307",
+              "tag": "S3_DOOR_PV",
+              "desc": "Gate 3 Opening",
+              "eunit": "meter",
+              "value": "7.58888"
+            },
+            {
+              "index": "10",
+              "tag": "S4_DOOR_MODE",
+              "desc": "Gate 4 Mode",
+              "eunit": "-",
+              "value": "0"
+            },
+            {
+              "index": "11",
+              "tag": "S4_DOOR_STAT",
+              "desc": "Gate 4 Status",
+              "eunit": "-",
+              "value": "5"
+            },
+            {
+              "index": "14",
+              "tag": "S4_DOOR_COND",
+              "desc": "Gate 4 Condition",
+              "eunit": "-",
+              "value": "0"
+            },
+            {
+              "index": "307",
+              "tag": "S4_DOOR_PV",
+              "desc": "Gate 4 Opening",
+              "eunit": "meter",
+              "value": "7.58888"
+            },
+            {
+              "index": "10",
+              "tag": "S5_DOOR_MODE",
+              "desc": "Gate 5 Mode",
+              "eunit": "-",
+              "value": "0"
+            },
+            {
+              "index": "11",
+              "tag": "S5_DOOR_STAT",
+              "desc": "Gate 5 Status",
+              "eunit": "-",
+              "value": "6"
+            },
+            {
+              "index": "14",
+              "tag": "S5_DOOR_COND",
+              "desc": "Gate 5 Condition",
+              "eunit": "-",
+              "value": "0"
+            },
+            {
+              "index": "307",
+              "tag": "S5_DOOR_PV",
+              "desc": "Gate 5 Opening",
+              "eunit": "meter",
+              "value": "7.58888"
+            },
+            {
+              "index": "154",
+              "tag": "DANGER_LVL_SP",
+              "desc": "Danger Level Setpoint",
+              "eunit": "meter",
+              "value": "8.555"
+            },
+            {
+              "index": "155",
+              "tag": "ALERT_LVL_SP",
+              "desc": "Alert Level Setpoint",
+              "eunit": "meter",
+              "value": "10.666"
+            },
+            {
+              "index": "307",
+              "tag": "S2_DOOR_PV",
+              "desc": "Gate 2 Opening",
+              "eunit": "meter",
+              "value": "7.58888"
+            }
+          ],
+          "Status": null
+        }
+      ]
+    },
+    "CrestGates": {
+      "AssetTypeRef": "4229e455449141b8984c0c2e547d94f1c3c5b577b61146c3a05fd84b1138581c",
+      "Quantity": 1,
+      "Data": [
+        {
+          "Id": "IPH-BPME-G-001-X-AFP-107",
+          "TotalData": 0,
+          "UpdateDate": {
+            "year": 2025,
+            "month": 4,
+            "day": 7,
+            "hour": 13,
+            "minute": 15,
+            "second": 0
+          },
+          "Data": [
+            {
+              "index": 51,
+              "tag": "CG_UPSTR_LVL",
+              "desc": "Upstream Level",
+              "eunit": "",
+              "value": 7.25
+            },
+            {
+              "index": 52,
+              "tag": "CG_DWNSTR_LVL",
+              "desc": "Downstream Level",
+              "eunit": "-",
+              "value": 5.08
+            },
+            {
+              "index": 1,
+              "tag": "CG_COND",
+              "desc": "Crestgate Condition",
+              "eunit": "",
+              "value": 2
+            },
+            {
+              "index": 2,
+              "tag": "CG_MODE",
+              "desc": "Crestgate Mode",
+              "eunit": "",
+              "value": 1
+            },
+            {
+              "index": 11,
+              "tag": "CG_AB_PRES",
+              "desc": "AIR BLADDER PRESSURE",
+              "eunit": "",
+              "value": 10.25
+            },
+            {
+              "index": 12,
+              "tag": "CG_IA_PRES",
+              "desc": "INLET AIR PRESSURE",
+              "eunit": "",
+              "value": 6.88
+            }
+          ],
+          "Status": null
+        }
+      ]
+    },
+    "PumpGates": {
+      "AssetTypeRef": "00e0fdd8799b44a4a968735a7344a6a1d5dcc22938c34c14a744314bd4924920",
+      "Quantity": 1,
+      "Data": [
+        {
+          "Id": "IPH-BPME-G-001-X-AFP-112",
+          "TotalData": 0,
+          "UpdateDate": {
+            "year": 2025,
+            "month": 4,
+            "day": 7,
+            "hour": 13,
+            "minute": 15,
+            "second": 0
+          },
+          "Data": [
+            {
+              "index": "4",
+              "tag": "UPSTR_AVG_LVL",
+              "desc": "Upstream Average Level",
+              "eunit": "-",
+              "value": "8.0000"
+            },
+            {
+              "index": "7",
+              "tag": "DNSTR_AVG_LVL",
+              "desc": "Downstream Average Level",
+              "eunit": "-",
+              "value": "7.50"
+            },
+            {
+              "index": "10",
+              "tag": "PG2_PUMP_MODE",
+              "desc": "Gate 2 Mode",
+              "eunit": "-",
+              "value": "1"
+            },
+            {
+              "index": "11",
+              "tag": "PG2_PUMP_STAT",
+              "desc": "Gate 2 Status",
+              "eunit": "-",
+              "value": "1"
+            },
+            {
+              "index": "14",
+              "tag": "PG2_PUMP_COND",
+              "desc": "Gate 2 Condition",
+              "eunit": "-",
+              "value": "5"
+            },
+
+
+
+
+
+
+
+            {
+              "index": "154",
+              "tag": "DANGER_LVL_SP",
+              "desc": "Danger Level Setpoint",
+              "eunit": "meter",
+              "value": "8.555"
+            },
+            {
+              "index": "155",
+              "tag": "ALERT_LVL_SP",
+              "desc": "Alert Level Setpoint",
+              "eunit": "meter",
+              "value": "10.666"
+            }
+          ],
+          "Status": null
+        }
+      ]
+    },
+    "RubberDams": {
+      "AssetTypeRef": "9c42bfb4fe644bfb97ed37515818c18b9b73e55f3e91457784fa3e025c538fa4",
+      "Quantity": 1,
+      "Data": [
+        {
+          "Id": "IPH-BPME-G-001-X-AFP-113",
+          "TotalData": 0,
+          "UpdateDate": {
+            "year": 2025,
+            "month": 4,
+            "day": 7,
+            "hour": 13,
+            "minute": 15,
+            "second": 0
+          },
+          "Data": [
+            {
+              "index": "30",
+              "tag": "UPSTR_AVG_LVL",
+              "desc": "Up Stream Average Level",
+              "eunit": "Meter",
+              "value": "8.22"
+            },
+            {
+              "index": "30",
+              "tag": "DNSTR_AVG_LVL",
+              "desc": "Down Stream Average Level",
+              "eunit": "Meter",
+              "value": "8.00"
+            },
+            {
+              "index": "30",
+              "tag": "RD_WTR_LVL",
+              "desc": "Rubber Dam Water Level",
+              "eunit": "Meter",
+              "value": "8.66"
+            },
+            {
+              "index": "30",
+              "tag": "RD_WTR_LVL_SP",
+              "desc": "Rubber Dam Water Level Set Point",
+              "eunit": "Meter",
+              "value": "8.66"
+            },
+            {
+              "index": "30",
+              "tag": "RD_BLADDER_PRES",
+              "desc": "Rubber Dam Bladder Pressure",
+              "eunit": "kPa",
+              "value": "2.345"
+            },
+            {
+              "index": "1",
+              "tag": "RD_B1_COND",
+              "desc": "Rubber Dam Blower 1 Condition",
+              "eunit": "",
+              "value": "2"
+            },
+            {
+              "index": "2",
+              "tag": "RD_B1_MODE",
+              "desc": "Rubber Dam Blower 1 Mode",
+              "eunit": "",
+              "value": "3"
+            },
+            {
+              "index": "3",
+              "tag": "RD_B1_STAT",
+              "desc": "Rubber Dam Blower 1 Status",
+              "eunit": "",
+              "value": "1"
+            },
+            {
+              "index": "52",
+              "tag": "RD_B2_MODE",
+              "desc": "Rubber Dam Blower 2 Mode",
+              "eunit": "",
+              "value": "3"
+            },
+            {
+              "index": "1",
+              "tag": "RD_B2_COND",
+              "desc": "Rubber Dam Blower 2 Condition",
+              "eunit": "",
+              "value": "2"
+            },
+            {
+              "index": "53",
+              "tag": "RD_B2_STAT",
+              "desc": "Rubber Dam Blower 2 Status",
+              "eunit": "",
+              "value": "0"
+            },
+            
+            {
+              "index": "52",
+              "tag": "RD_DF_MODE",
+              "desc": "Rubber Dam Deflate Mode",
+              "eunit": "",
+              "value": "0"
+            },
+            {
+              "index": "1",
+              "tag": "RD_DF_COND",
+              "desc": "Rubber Dam Deflate Condition",
+              "eunit": "",
+              "value": "3"
+            },
+            {
+              "index": "53",
+              "tag": "RD_DF_STAT",
+              "desc": "Rubber Dam Deflate Status",
+              "eunit": "",
+              "value": "5"
+            }, 
+            {
+              "index": "52",
+              "tag": "RD_IF_MODE",
+              "desc": "Rubber Dam Inflate Actuator Mode",
+              "eunit": "",
+              "value": "3"
+            },
+            {
+              "index": "1",
+              "tag": "RD_IF_COND",
+              "desc": "Rubber Dam Inflate Actuator Condition",
+              "eunit": "",
+              "value": "2"
+            },
+            {
+              "index": "53",
+              "tag": "RD_IF_STAT",
+              "desc": "Rubber Dam Inflate Actuator Status",
+              "eunit": "",
+              "value": "4"
+            }
+          ],
+          "Status": null
+        }
+      ]
+    }
+  },
+  "RealDataPumps": {
+    "AssetTypeRef": "d1a29ef9b3fa4f9aac53a66b32fa9b2234e02a52e14f40a6a475c5cf7eab3b7a",
+    "Quantity": 1,
+    "Data": [
+      {
+        "Id": "IPH-BPME-G-001-X-AFP-103",
+        "TotalData": 0,
+        "UpdateDate": {
+          "year": 2025,
+          "month": 4,
+          "day": 7,
+          "hour": 13,
+          "minute": 15,
+          "second": 0
+        },
+        "Data": [
+          {
+            "index": "30",
+            "tag": "DNSTR_AVG_LVL",
+            "desc": "Down Stream Average Level",
+            "eunit": "Meter",
+            "value": "8.66"
+          },
+          {
+            "index": "21",
+            "tag": "P1_PUMP_ACC_DLT",
+            "desc": "Pump 1 Accum Time",
+            "eunit": "Seconds",
+            "value": "3600"
+          },
+          {
+            "index": "1",
+            "tag": "P1_PUMP_COND",
+            "desc": "Pump 1 Condition",
+            "eunit": "",
+            "value": "0"
+          },
+          {
+            "index": "2",
+            "tag": "P1_PUMP_MODE",
+            "desc": "Pump 1 Mode",
+            "eunit": "",
+            "value": "3"
+          },
+          {
+            "index": "3",
+            "tag": "P1_PUMP_STAT",
+            "desc": "Pump 1 Status",
+            "eunit": "",
+            "value": "0"
+          },
+          {
+            "index": "71",
+            "tag": "P2_PUMP_ACC_DLT",
+            "desc": "Pump 2 Accum Time",
+            "eunit": "Seconds",
+            "value": "0"
+          },
+          {
+            "index": "51",
+            "tag": "P2_PUMP_COND",
+            "desc": "Pump 2 Condition",
+            "eunit": "",
+            "value": "0"
+          },
+          {
+            "index": "52",
+            "tag": "P2_PUMP_MODE",
+            "desc": "Pump 2 Mode",
+            "eunit": "",
+            "value": "3"
+          },
+          {
+            "index": "53",
+            "tag": "P2_PUMP_STAT",
+            "desc": "Pump 2 Status",
+            "eunit": "",
+            "value": "1"
+          },
+          {
+            "index": "29",
+            "tag": "UPSTR_AVG_LVL",
+            "desc": "Up Stream Average Level",
+            "eunit": "Meter",
+            "value": "7.777"
+          },
+          {
+            "index": "441",
+            "tag": "P_LVL_SP0",
+            "desc": "Pump Level SP 0",
+            "eunit": "Meter",
+            "value": "8.7874"
+          },
+          {
+            "index": "442",
+            "tag": "P_LVL_SP1",
+            "desc": "Pump Level SP 1",
+            "eunit": "Meter",
+            "value": "16.234"
+          },
+          {
+            "index": "443",
+            "tag": "P_LVL_SP2",
+            "desc": "Pump Level SP 2",
+            "eunit": "Meter",
+            "value": "6.2456"
+          },
+          {
+            "index": "444",
+            "tag": "P_LVL_SP3",
+            "desc": "Pump Level SP 3",
+            "eunit": "Meter",
+            "value": "6.678"
+          },
+          {
+            "index": "445",
+            "tag": "P_LVL_SP4",
+            "desc": "Pump Level SP 4",
+            "eunit": "Meter",
+            "value": "6.298"
+          },
+          {
+            "index": "446",
+            "tag": "P_LVL_SP5",
+            "desc": "Pump Level SP 5",
+            "eunit": "Meter",
+            "value": "6.354"
+          }
+        ],
+        "Status": null
+      }
+    ]
+  },
+  "RealDataTrashRakes": {
+    "AssetTypeRef": "bfd9cf9f5aa345e49ecbc120f225004aa026859b8eaf43fa8e4d53e2e905f2c4",
+    "Quantity": 1,
+    "Data": [
+      {
+        "Id": "IPH-BPME-G-001-X-AFP-106",
+        "TotalData": 0,
+        "UpdateDate": {
+          "year": 2025,
+          "month": 4,
+          "day": 7,
+          "hour": 13,
+          "minute": 15,
+          "second": 0
+        },
+        "Data": [
+          {
+            "index": 1,
+            "tag": "UPSTR_AVG_LVL",
+            "desc": "Upstream Average Level",
+            "eunit": "-",
+            "value": 9.857476
+          },
+          {
+            "index": 2,
+            "tag": "DNSTR_AVG_LVL",
+            "desc": "Downstream Average Level",
+            "eunit": "-",
+            "value": 6.81453
+          },
+          {
+            "index": 3,
+            "tag": "RS1_COND",
+            "desc": "Rotary Screen 1 Condition",
+            "eunit": "-",
+            "value": "0"
+          },
+          {
+            "index": 4,
+            "tag": "RS1_MODE",
+            "desc": "Rotary Screen 1 Mode",
+            "eunit": "-",
+            "value": "3"
+          },
+          {
+            "index": 5,
+            "tag": "RS1_STAT",
+            "desc": "Rotary Screen 1 Status",
+            "eunit": "-",
+            "value": "0"
+          },
+          {
+            "index": 6,
+            "tag": "RS_CVYR1_COND",
+            "desc": "Conveyor 1 Condition",
+            "eunit": "-",
+            "value": "0"
+          },
+          {
+            "index": 7,
+            "tag": "RS_CVYR1_MODE",
+            "desc": "Conveyor 1 Mode",
+            "eunit": "-",
+            "value": "3"
+          },
+          {
+            "index": 8,
+            "tag": "RS_CVYR1_STAT",
+            "desc": "Conveyor 1 Status",
+            "eunit": "-",
+            "value": "0"
+          }
+        ],
+        "Status": null
+      }
+    ]
+  },
+  "RealDataWaterTreatments": {
+    "WaterTreatmentPlants": {
+      "AssetTypeRef": "d92eefd049de4438ac5932d4828a18997e3e8822e9de44c49042b7380db64041",
+      "Quantity": 1,
+      "Data": [
+        {
+          "Id": "IPH-BPME-G-001-X-AFP-111",
+          "TotalData": 0,
+          "UpdateDate": {
+            "year": 2025,
+            "month": 4,
+            "day": 7,
+            "hour": 13,
+            "minute": 15,
+            "second": 0
+          },
+          "Data": [
+            {
+              "index": 10058,
+              "tag": "B1_COND",
+              "desc": "Blower 1 Condition",
+              "eunit": "",
+              "value": "0"
+            },
+            {
+              "index": 10058,
+              "tag": "B1_MODE",
+              "desc": "Blower 1 Mode",
+              "eunit": "",
+              "value": "2"
+            },
+            {
+              "index": 10058,
+              "tag": "B1_STAT",
+              "desc": "Blower 1 Status",
+              "eunit": "",
+              "value": "1"
+            },
+            {
+              "index": 10058,
+              "tag": "B2_COND",
+              "desc": "Blower 2 Condition",
+              "eunit": "",
+              "value": "0"
+            },
+            {
+              "index": 10058,
+              "tag": "B2_MODE",
+              "desc": "Blower 2 Mode",
+              "eunit": "",
+              "value": "1"
+            },
+            {
+              "index": 10058,
+              "tag": "B2_STAT",
+              "desc": "Blower 2 Status",
+              "eunit": "",
+              "value": "0"
+            },
+            {
+              "index": 10058,
+              "tag": "G1_I_COND",
+              "desc": "Inlet Gate 1 Condition",
+              "eunit": "",
+              "value": "0"
+            },
+            {
+              "index": 10058,
+              "tag": "G1_I_MODE",
+              "desc": "Inlet Gate 1 Mode",
+              "eunit": "",
+              "value": "2"
+            },
+            {
+              "index": 10058,
+              "tag": "G1_I_STAT",
+              "desc": "Inlet Gate 1 Status",
+              "eunit": "",
+              "value": "1"
+            },
+            {
+              "index": 10058,
+              "tag": "G1_O_COND",
+              "desc": "Outlet Gate 1 Condition",
+              "eunit": "",
+              "value": "0"
+            },
+            {
+              "index": 10058,
+              "tag": "G1_O_MODE",
+              "desc": "Outlet Gate 1 Mode",
+              "eunit": "",
+              "value": "2"
+            },
+            {
+              "index": 10058,
+              "tag": "G1_O_STAT",
+              "desc": "Outlet Gate 1 Status",
+              "eunit": "",
+              "value": "1"
+            },
+            {
+              "index": 10058,
+              "tag": "SP1_COND",
+              "desc": "Sludge Pump 1 Condition",
+              "eunit": "",
+              "value": "0"
+            },
+            {
+              "index": 10058,
+              "tag": "SP1_MODE",
+              "desc": "Sludge Pump 1 Mode",
+              "eunit": "",
+              "value": "2"
+            },
+            {
+              "index": 10058,
+              "tag": "SP1_STAT",
+              "desc": "Sludge Pump 1 Status",
+              "eunit": "",
+              "value": "1"
+            },
+            {
+              "index": 10058,
+              "tag": "P1_I_COND",
+              "desc": "Inlet Pump 1 Condition",
+              "eunit": "",
+              "value": "0"
+            },
+            {
+              "index": 10058,
+              "tag": "P1_I_MODE",
+              "desc": "Inlet Pump 1 Mode",
+              "eunit": "",
+              "value": "2"
+            },
+            {
+              "index": 10058,
+              "tag": "P1_I_STAT",
+              "desc": "Inlet Pump 1 Status",
+              "eunit": "",
+              "value": "1"
+            },
+            {
+              "index": 10058,
+              "tag": "SV1_COND",
+              "desc": "Sludge Valve 1 Condition",
+              "eunit": "",
+              "value": "0"
+            },
+            {
+              "index": 10058,
+              "tag": "SV1_MODE",
+              "desc": "Sludge Valve 1 Mode",
+              "eunit": "",
+              "value": "2"
+            },
+            {
+              "index": 10058,
+              "tag": "SV1_STAT",
+              "desc": "Sludge Valve 1 Status",
+              "eunit": "",
+              "value": "1"
+            },
+            {
+              "index": 366,
+              "tag": "FLOW",
+              "desc": "Flow",
+              "eunit": "M3/h (Float)",
+              "value": 7.44
+            },
+            {
+              "index": 366,
+              "tag": "COD",
+              "desc": "COD",
+              "eunit": "Mg/l (Float)",
+              "value": 7.44
+            },
+            {
+              "index": 366,
+              "tag": "DO_OUTPUT",
+              "desc": "DO Output Sensor",
+              "eunit": "Mg/l (Float)",
+              "value": 7.44
+            }
+          ],
+          "Status": null
+        }
+      ]
+    },
+    "Aerators": {
+      "AssetTypeRef": "ef97c65e13184940a68bfdf1c6898ea780a6da3a0fa34780ae8e39dbd03ee1f7",
+      "Quantity": 1,
+      "Data": [
+        {
+          "Id": "IPH-BPME-G-001-X-AFP-109",
+          "TotalData": 0,
+          "UpdateDate": {
+            "year": 2025,
+            "month": 4,
+            "day": 7,
+            "hour": 13,
+            "minute": 15,
+            "second": 0
+          },
+          "Data": [
+            {
+              "index": "4",
+              "tag": "UPSTR_AVG_LVL",
+              "desc": "Upstream Average Level",
+              "eunit": "-",
+              "value": "8.0000"
+            },
+            {
+              "index": "7",
+              "tag": "DNSTR_AVG_LVL",
+              "desc": "Downstream Average Level",
+              "eunit": "-",
+              "value": "7.50"
+            },
+            {
+              "index": "1",
+              "tag": "P1_PUMP_COND",
+              "desc": "Pump 1 Condition",
+              "eunit": "",
+              "value": "0"
+            },
+            {
+              "index": "2",
+              "tag": "P1_PUMP_MODE",
+              "desc": "Pump 1 Mode",
+              "eunit": "",
+              "value": "3"
+            },
+            {
+              "index": "3",
+              "tag": "P1_PUMP_STAT",
+              "desc": "Pump 1 Status",
+              "eunit": "",
+              "value": "0"
+            },
+            {
+              "index": "1",
+              "tag": "P2_PUMP_COND",
+              "desc": "Pump 2 Condition",
+              "eunit": "",
+              "value": "0"
+            },
+            {
+              "index": "2",
+              "tag": "P2_PUMP_MODE",
+              "desc": "Pump 2 Mode",
+              "eunit": "",
+              "value": "0"
+            },
+            {
+              "index": "3",
+              "tag": "P2_PUMP_STAT",
+              "desc": "Pump 2 Status",
+              "eunit": "",
+              "value": "0"
+            }
+            
+          ],
+          "Status": null
+        }
+      ]
+    },
+    "WaterQualitys": {
+      "AssetTypeRef": "9b408cef5dfe491bab87e3a8bb426408225d90f756c4494fa110389600b6cb31",
+      "Quantity": 1,
+      "Data": [
+        {
+          "Id": "IPH-BPME-G-001-X-AFP-110",
+          "TotalData": 0,
+          "UpdateDate": {
+            "year": 2025,
+            "month": 4,
+            "day": 7,
+            "hour": 13,
+            "minute": 15,
+            "second": 0
+          },
+          "Data": [
+            {
+              "index": 10058,
+              "tag": "Water_Quality_Table",
+              "desc": "River Status",
+              "eunit": "",
+              "value": "Rich"
+            },
+            {
+              "index": 10059,
+              "tag": "SamplingPump1_Mode",
+              "desc": "Sampling Pump 1 Mode",
+              "eunit": "",
+              "value": "Manual"
+            },
+            {
+              "index": 10060,
+              "tag": "SamplingPump1_Stat",
+              "desc": "Sampling Pump 1 Status",
+              "eunit": "",
+              "value": "Run"
+            },
+            {
+              "index": 10061,
+              "tag": "SamplingPump1_Cond",
+              "desc": "Sampling Pump 1 Condition",
+              "eunit": "",
+              "value": "Normal"
+            },
+            {
+              "index": 10062,
+              "tag": "SamplingPump2_Mode",
+              "desc": "Sampling Pump 2 Mode",
+              "eunit": "",
+              "value": "Auto"
+            },
+            {
+              "index": 10063,
+              "tag": "SamplingPump2_Stat",
+              "desc": "Sampling Pump 2 Status",
+              "eunit": "",
+              "value": "Run"
+            },
+            {
+              "index": 10064,
+              "tag": "SamplingPump2_Cond",
+              "desc": "Sampling Pump 2 Condition",
+              "eunit": "",
+              "value": "No Data"
+            },
+            {
+              "index": 400,
+              "tag": "WATER_INDEX",
+              "desc": "WATER INDEX",
+              "eunit": "Class (Int)",
+              "value": 12
+            },
+            {
+              "index": 251,
+              "tag": "BODEQ_LSA",
+              "desc": "BODEQ LSA",
+              "eunit": "Mg/l (Float)",
+              "value": 6.20
+            },
+            {
+              "index": 250,
+              "tag": "CODEQ_LSA",
+              "desc": "CODEQ LSA",
+              "eunit": "Mg/l (Float)",
+              "value": 5.80
+            },
+            {
+              "index": 366,
+              "tag": "LDO",
+              "desc": "LDO",
+              "eunit": "Mg/l (Float)",
+              "value": 7.44
+            },
+            {
+              "index": 365,
+              "tag": "LDO%",
+              "desc": "LDO%",
+              "eunit": "Sat (Float)",
+              "value": 21
+            },
+            {
+              "index": 367,
+              "tag": "LDO_BP",
+              "desc": "LDO BP",
+              "eunit": "mmHg (Float)",
+              "value": 6.33
+            },
+            {
+              "index": 358,
+              "tag": "NH4+_1",
+              "desc": "NH4+ 1",
+              "eunit": "Mg/l-n (Float)",
+              "value": 4.02
+            },
+            {
+              "index": 351,
+              "tag": "PH",
+              "desc": "PH",
+              "eunit": "(Float)",
+              "value": 4.0
+            },
+            {
+              "index": 354,
+              "tag": "SPCOND_2",
+              "desc": "SPCOND 2",
+              "eunit": "uS/cm (Float)",
+              "value": 7.00
+            },
+            {
+              "index": 350,
+              "tag": "TEMPERATURE",
+              "desc": "TEMPERATURE",
+              "eunit": "C (Float)",
+              "value": 31.8
+            },
+            {
+              "index": 252,
+              "tag": "TSSEQ_LSA",
+              "desc": "TSSEQ LSA",
+              "eunit": "Ppm (Float)",
+              "value": 5
+            }
+          ],
+          "Status": null
+        }
+      ]
+    }
+  },
+  "TrendGates": null,
+  "TrendPumps": null,
+  "TrendWaterTreatments": null,
+  "TrendTrashRakes": null,
+  "AlarmGates": null,
+  "AlarmPumps": null,
+  "AlarmWaterTreatments": null,
+  "AlarmTrashRakes": null
+}

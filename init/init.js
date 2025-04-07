@@ -145,6 +145,8 @@ async function sendJsonFileToMechis(secretKey, appKey, reference, file) {
 }
 
 async function readFileFromUrl(secretKey, appKey, reference, fileUrl) {
+  console.log("File URL: ", fileUrl);
+
   fetch(fileUrl)
     .then((response) => {
       if (!response.ok) {
