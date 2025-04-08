@@ -136,23 +136,23 @@ app.use("/api", logApiRoutes);
 app.use("/api", settingApiRoutes);
 
 // Function to get the current local network IP
-const getLocalIP = () => {
-  const interfaces = os.networkInterfaces();
-  const wifi = interfaces["Wi-Fi"];
-  let ipAddress = null;
-  wifi.forEach((element) => {
-    if (element["family"] == "IPv4" && !element["internal"]) {
-      ipAddress = element["address"];
-    }
-  });
+// const getLocalIP = () => {
+//   const interfaces = os.networkInterfaces();
+//   const wifi = interfaces["Wi-Fi"];
+//   let ipAddress = null;
+//   wifi.forEach((element) => {
+//     if (element["family"] == "IPv4" && !element["internal"]) {
+//       ipAddress = element["address"];
+//     }
+//   });
 
-  return ipAddress ?? "127.0.0.1"; // Fallback to localhost if no network IP found
-};
+//   return ipAddress ?? "127.0.0.1"; // Fallback to localhost if no network IP found
+// };
 
 const port = PORT || 3001;
 const ip_address = IP_ADDRESS || "0.0.0.0"; // Your IP address
 // db.sync({ force: false }).then(() => {
 app.listen(port, ip_address, () => {
-  console.log(`Server is running on http://${getLocalIP()}:${port}`);
+  console.log(`Server is running on http://localhost:${port}`);
 });
 // });
