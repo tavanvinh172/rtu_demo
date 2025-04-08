@@ -43,7 +43,7 @@ module.exports = {
     try {
       let filePath = null;
       if (req.body.Id) {
-        filePath = path.join("upload\\", `${req.body.Id}.json`);
+        filePath = path.join("upload/", `${req.body.Id}.json`);
       } else {
         res.status(400).send({
           status: 400,
