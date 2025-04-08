@@ -92,7 +92,6 @@ cron.schedule("* * * * * *", async () => {
       where: { rtuId: rtuData.id },
     });
     if (status != null) {
-      console.log("count: ", settings.count);
       if (settings.count >= rtuData.interval) {
         // console.log("reach");
         const statusVal = status.dataValues;
