@@ -72,7 +72,7 @@ module.exports = {
 
       // const filePath = path.resolve(file.filepath);
 
-      res.download(`upload\\${file.dataValues.filename}`, async (err) => {
+      res.download(`upload/${file.dataValues.filename}`, async (err) => {
         if (err) {
           console.error("Error downloading file:", err);
           return res.status(500).json({ message: "Error downloading file" });
