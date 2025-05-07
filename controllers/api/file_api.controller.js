@@ -6,7 +6,7 @@ const db = require("../../models");
 const fs = require("fs");
 const { settings } = require("../../constants/global_variable");
 const File = db.file;
-
+const { Op } = require("sequelize");
 // Utility function to save metadata to the database
 const saveFileMetadata = async (name, type, filePath) => {
   await File.create({ name, type, path: filePath });
@@ -14,17 +14,35 @@ const saveFileMetadata = async (name, type, filePath) => {
 
 module.exports = {
   getAllFile: async (req, res) => {
-    const { pageIndex, pageSize } = req.body;
-    // console.log(settings.rtuSetting);
+    const { pageIndex = 1, pageSize = 10, startDate, endDate } = req.body;
+
     const limit = parseInt(pageSize);
     const offset = (pageIndex - 1) * limit;
 
+    const whereCondition = {};
+
+    // Apply date filter if provided
+    if (startDate || endDate) {
+      whereCondition.createdAt = {};
+      if (startDate) {
+        whereCondition.createdAt[Op.gte] = new Date(startDate);
+      }
+      if (endDate) {
+        // Include end of day
+        whereCondition.createdAt[Op.lte] = new Date(
+          new Date(endDate).setHours(23, 59, 59, 999)
+        );
+      }
+    }
+
     try {
       const files = await File.findAndCountAll({
+        where: whereCondition,
         limit,
         offset,
         order: [["createdAt", "DESC"]],
       });
+
       res.status(200).send({
         data: files.rows,
         currentPage: pageIndex,
@@ -33,7 +51,7 @@ module.exports = {
       });
     } catch (error) {
       res.status(500).send({
-        message: "An error occurred while retrieving posts.",
+        message: "An error occurred while retrieving files.",
         error: error.message,
       });
     }

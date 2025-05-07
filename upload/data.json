@@ -1,0 +1,143 @@
+{
+   "asset_ref":"dddb093373f94e5fba94a0032deaa2440aa5f3ce43c54446ad4bec5f9e7bcc7e",
+   "data":{
+      "water_level":{
+         "UPSTR_AVG_LVL":null,
+         "DNSTR_AVG_LVL":null
+      },
+      "pump_geo_location_information":{
+         "STATION_ID":190,
+         "LONG_N_D":100.7531495,
+         "LONG_N_M":45,
+         "LONG_N_S":11,
+         "LONG_E_D":4.293037516666667,
+         "LONG_E_M":17,
+         "LONG_E_S":34
+      },
+      "fuel_and_battery":{
+         "PUMP_FUEL_LVL":50,
+         "SOLAR_PV_VOLT":-0.03,
+         "RTU_BATT_VOLT":5.01,
+         "PUMP_BATT_VOLT":15.4
+      },
+      "pump_information":{
+         "P_PUMP_COND":0,
+         "P_PUMP_MODE":0,
+         "P_PUMP_STAT":1,
+         "P_PUMP_DLT_RUN":10209,
+         "P_PUMP_RUN_TS":"2024-10-24 21:23:39",
+         "P_PUMP_DLT_STOP":null,
+         "P_PUMP_STOP_TS":null,
+         "P_PUMP_ACC_DLT":582,
+         "P_PUMP_ACC_CNT":582,
+         "P_PUMP_ACC_TS":"9 min 42 s"
+      },
+      "alarm_event_index":{
+         "sys_startup":{
+            "status":false,
+            "timestamp":null
+         },
+         "sys_shutdown":{
+            "status":false,
+            "timestamp":null
+         },
+         "sys_maint":{
+            "status":false,
+            "timestamp":null
+         },
+         "shutdown":{
+            "status":false,
+            "timestamp":null
+         },
+         "overloadtrip":{
+            "status":false,
+            "timestamp":null
+         },
+         "pump_fault":{
+            "status":false,
+            "timestamp":null
+         },
+         "nopwr":{
+            "status":false,
+            "timestamp":null
+         },
+         "Iv_upsensor_fault":{
+            "status":false,
+            "timestamp":null
+         },
+         "lv_upstrm_err":{
+            "status":false,
+            "timestamp":null
+         },
+         "lv_dnsensor_fault":{
+            "status":false,
+            "timestamp":null
+         },
+         "lv_dnstm_err":{
+            "status":false,
+            "timestamp":null
+         },
+         "lv_lolo":{
+            "status":false,
+            "timestamp":null
+         },
+         "lv_hihi":{
+            "status":false,
+            "timestamp":null
+         },
+         "genset_run":{
+            "status":false,
+            "timestamp":null
+         },
+         "run":{
+            "status":true,
+            "timestamp":"2024-10-24 16:05:27"
+         },
+         "manual":{
+            "status":true,
+            "timestamp":"2024-10-24 16:05:27"
+         },
+         "remote":{
+            "status":false,
+            "timestamp":null
+         },
+         "auto":{
+            "status":false,
+            "timestamp":null
+         },
+         "fuel_sensor_fault":{
+            "status":false,
+            "timestamp":null
+         },
+         "low_oil":{
+            "status":false,
+            "timestamp":"2024-10-24 16:05:27"
+         },
+         "fuel_sensor_err":{
+            "status":false,
+            "timestamp":null
+         },
+         "high_water_temp":{
+            "status":false,
+            "timestamp":"2024-10-24 16:05:27"
+         },
+         "low_hydraulic_oil":{
+            "status":false,
+            "timestamp":"2024-10-24 16:05:27"
+         },
+         "engine_overspeed":{
+            "status":false,
+            "timestamp":"2024-10-24 16:05:27"
+         },
+         "alt_charging":{
+            "status":false,
+            "timestamp":"2024-10-24 16:05:27"
+         }
+      },
+      "trend_value":[
+         "2024-10-24 15:55:12,,50,,-0.03,5.01,12,100.7531495,45,11,4.293037516666667,17,34,1,0",
+         "2024-10-24 16:00:23,,50,,-0.03,5.01,12,100.7531495,45,11,4.293037516666667,17,34,1,0",
+         "2024-10-24 16:05:00,,50,,-0.03,5.01,12,100.7531495,45,11,4.293037516666667,17,34,1,0"
+      ]
+   }
+}

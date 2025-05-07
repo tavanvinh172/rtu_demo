@@ -1,6 +1,7 @@
 const db = require("../models");
 const User = db.user;
 const File = db.file;
+const Rtu = db.rtu;
 const multer = require("multer");
 const path = require("path");
 const { IP_ADDRESS, PORT } = require("../constants/base_url");
@@ -52,23 +53,25 @@ module.exports = {
     try {
       // const { userId } = req.body;
       const user = await User.findByPk(1);
+      const rtu = await Rtu.findOne();
       if (!user) {
         return res.status(404).json({ error: "User not found" });
       }
 
+      console.log(rtu);
+
       const { mimetype } = req.file;
       // console.log(req.file);
       const filetype = mimetype === "application/xml" ? "xml" : "json";
-      // console.log('filename: ', filename);
-      // console.log('path: ', filepath);
 
-      const file = await File.create({
+      await File.create({
         filename: req.file.originalname,
         filetype,
         filepath: `http://${IP_ADDRESS}:${PORT || 3001}/${
           req.file.originalname
         }`,
         userId: 1,
+        rtuId: rtu.id,
       });
 
       res.redirect("/");
